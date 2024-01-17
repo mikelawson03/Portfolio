@@ -1,47 +1,66 @@
 html{
     background-color: #F8FAE5;
     font-family: 'Roboto', sans-serif;
-    color: #5F0F40;
+    color: #1A936F;
     }
 
 a {
     text-decoration: none;
-    color: #5F0F40;
+    color: #1A936F;
 }
 
 .heading{
-    text-align: center;
-    font-family: 'Caprasimo', serif;
-    font-kerning: none;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-bottom: 10px;
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
     margin: 0px;
-    width: 100%;
+}
+
+.inactive-link {
+    font-weight: 100;
+    color: gray;
 }
 
 body{
     margin: 0px;
 }
 
+.flex-wrapper{
+    background-color: #114B5F;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
 .body{
-    background-color: #5F0F40;
     margin: 0px;
     padding: 0px;
-    display: block;
+    display: grid;
+    grid-template: auto / repeat(3, 300px);
     text-align: center;
-    padding: 40px 0px;
-    width: 100%;
+    justify-items: center;
+
 }
 
 .content-container {
-    display: inline-block;
     margin: 20px;
-    padding: 10px 20px 20px 20px;
     text-align: center;
-    background-color: #E36414;
-    border: 2px solid #9A031E;
-    border-radius: 20px;
+    background-color: #F8FAE5;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.icon-container{
+    background-color: #F8FAE5;
+    border-radius: 10px;
+    align-content: center;
+    margin: 10px 0px 20px 0px;
+    width: fit-content;
+    padding: 15px;
+    grid-column-start: 2;
 }
 
 .resume-container{
@@ -74,14 +93,37 @@ body{
 }
 
 .footer {
-    padding: 20px;
-    text-align: center;
-    display: block;
-    
+   display: none;
 }
 
 .icon {
     height: 35px;
-    padding: 20px 0px 10px 10px;
+    padding: 10px;
 }
 
+@media screen and (max-width:900px) {
+    .heading > div {
+        display: none;
+    }
+
+    .flex-wrapper{
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .body{
+        display: inline-block;
+    }
+    
+    .content-container{
+        padding: 20px;
+    }
+
+    .footer{
+        display: inline-block;
+        width: 100vw;
+        padding: 20px 0px;
+        text-align: center;
+    }
+}
