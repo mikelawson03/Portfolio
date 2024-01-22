@@ -5,11 +5,12 @@ html {
 
 
 .secondary {
-    background-color: #114B5F;
-    
+    background-color: #114B5F;    
 }
 
-
+.accordion-head {
+    background-color: #2B3035;
+}
 
 .btn-projects {
     background-color: #1A936F;
