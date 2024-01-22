@@ -1,156 +1,22 @@
-html{
-    font-family: 'Roboto', sans-serif;
-    color: #1A936F;
+html {
     padding: 0px;
     margin: 0px;
-    }
+}
 
+
+.secondary {
+    background-color: #114B5F;
+    
+}
+
+
+
+.btn-projects {
+    background-color: #1A936F;
+}
+ 
 a {
     text-decoration: none;
     color: #1A936F;
 }
 
-.heading{
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    margin: 0px;
-}
-
-.inactive-link {
-    font-weight: 100;
-    color: gray;
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-.flex-wrapper{
-    background-color: #114B5F;
-    display: flex;
-    width: 100vw;
-    max-width: 100vw;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-
-.body{
-    margin: 0px;
-    padding: 0px;
-    display: grid;
-    grid-template: auto / repeat(3, 300px);
-    text-align: center;
-    justify-items: center;
-
-}
-
-.grid-content-container {
-    margin: 20px;
-    text-align: center;
-    background-color: #F8FAE5;
-    border: none;
-    border-radius: 10px;
-    width: 250px;
-}
-
-.full-width-content-container {
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    background-color: #F8FAE5;
-    border: none;
-    border-radius: 10px;
-}
-
-.icon-container{
-    background-color: #F8FAE5;
-    border-radius: 10px;
-    align-content: center;
-    margin: 10px 0px 20px 0px;
-    width: fit-content;
-    padding: 15px;
-}
-
-.resume-container{
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px 20px 20px;
-    text-align: left;
-    background-color: #F8FAE5;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.resume-container-inner {
-    width: 95%;
-    margin: 10px 0px;
-    padding: 10px;
-    background-color: #88D498;
-    border-radius: 10px;
-}
-
-.resume-container > h2 {
-    text-align: center;
-}
-
-.project-screenshot {
-    height: 200px;
-    border-radius: 10px;
-    padding: 10px 20px 20px 20px;
-}
-
-.footer {
-   display: none;
-}
-
-.icon {
-    height: 35px;
-    padding: 10px;
-}
-
-#about-text{
-    display: inline-block;
-    width: 50%;
-}
-
-
-
-@media screen and (max-width:900px) {
-    .heading > div {
-        display: none;
-    }
-
-    .flex-wrapper{
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-    }
-
-    .body{
-        display: inline-block;
-    }
-    
-    .content-container{
-        padding: 20px;
-    }
-
-    .footer{
-        display: inline-block;
-        width: 100vw;
-        padding: 20px 0px;
-        text-align: center;
-    }
-
-    .resume-container{
-        width: 80%;
-        
-    }
-}
